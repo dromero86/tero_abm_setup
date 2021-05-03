@@ -10,13 +10,27 @@
         "tero":"4.0.3-stable",
         "halcon": "2.1-production"
     },
-    "tero_forge":[ "schema" ],
+    "tero_forge":[ ],
     "halcon_forge":[ ],
+	
+	"boot_sql":
+    {
+        "check_online": true,
+        "files":
+        [
+            "sql/install.sql"
+        ] 
+    },
+	
     "files":
     {
         "config/schema.json":"app/config/schema.json",
         "model/abm.php":"app/model/abm.php",
-        "helper/abm_helper.php":"app/helper/abm_helper.php"
+        "model/auth.php":"app/model/auth.php",
+        "model/ui.php":"app/model/ui.php",
+        "helper/abm_helper.php":"app/helper/abm_helper.php",
+        "library/crunch.php":"app/library/crunch.php",
+        "library/schema.php":"app/library/schema.php"
     },
     "config":
     {
@@ -27,13 +41,26 @@
                 {"file":"app/vendor/Parser"          , "library":{ "class":"Parser"   , "rename":"parser"  } }, 
                 {"file":"app/vendor/Dataset"         , "library":{ "class":"Dataset"  , "rename":"data"    } },
                 {"file":"app/vendor/input"           , "library":{ "class":"input"    , "rename":"input"   } },
-                {"file":"app/vendor/database_result" , "helper" :true }, 
-                {"file":"app/vendor/database_helper" , "helper" :true }, 
+                {"file":"app/vendor/database_result" , "helper" : true }, 
+                {"file":"app/vendor/database_helper" , "helper" : true }, 
                 {"file":"app/vendor/database"        , "library":{ "class":"database" , "rename":"db"      } },
-                {"file":"app/vendor/Telepatia"       , "library":{ "class":"Telepatia", "rename":"session" } }, 
-                {"file":"app/model/auth"             , "helper" :true },
-                {"file":"app/model/abm"             , "helper" :true }
+                {"file":"app/vendor/Telepatia"       , "library":{ "class":"Telepatia", "rename":"session" } },
+				{"file":"app/library/crunch"         , "library":{ "class":"crunch"   } },
+				{"file":"app/library/schema"         , "library":{ "class":"schema"   } },
+				{"file":"app/helper/abm_helper"      , "helper" : true},
+                {"file":"app/model/abm"              , "helper" : true },
+                {"file":"app/model/auth"             , "helper" : true },
+                {"file":"app/model/ui"               , "helper" : true }
             ]
+        },
+        "session":
+        {
+            "Telepatia":
+            {
+                "app"    : "app",
+                "table"  : "session",
+                "timeout": 60
+            }
         } 
     }
 }
