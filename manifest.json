@@ -15,7 +15,8 @@
     "files":
     {
         "config/schema.json":"app/config/schema.json",
-        "model/abm.php":"app/model/abm.php"
+        "model/abm.php":"app/model/abm.php",
+        "helper/abm_helper.php":"app/helper/abm_helper.php"
     },
     "config":
     {
