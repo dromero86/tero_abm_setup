@@ -67,6 +67,75 @@
 		"session"           : { "alias": "SE"   , "join" : true },
 		"usuarios"          : { "alias": "US"   , "join" : true },
 		"usuarios_tipo"     : { "alias": "UST"  , "join" : true }
+	},
+	    
+	"crunch":
+	{
+	    "vars":
+	    {
+	       "font"             : "'Roboto', sans-serif",
+	       "badge_bg"         : "#1565c0",
+
+	       "toolbar_selector" : "[view_id='app.mainbar']",
+
+	       "toolbar_bg"       : "#d32f2f",
+	       "toolbar_input_bg" : "#b71c1c",
+	       "mobibar_bg"       : "#d32f2f",
+
+	       "body_bg"          : "#f6f6f6",
+	       "sidebar_bg"       : "#d32f2f",
+
+	       "login_head_bg"    : "#d32f2f", 
+	       "login_btn_bg"     : "#e53935",
+
+	       "main_logo_bg"     : "#c62828",
+	       "login_splash_keys": "ceramics,stone" 
+	    }, 
+	    "files" : 
+	    [
+
+		"sdk/ui/css/crunch/font.css"            ,
+		"sdk/ui/css/crunch/global.css"          ,
+		"sdk/ui/css/crunch/fx.css"              ,
+		"sdk/ui/css/crunch/toolbar.css"         ,
+		"sdk/ui/css/crunch/toolbar_input.css"   ,
+		"sdk/ui/css/crunch/toolbar_button.css"  ,
+		"sdk/ui/css/crunch/toolbar_popup.css"   ,
+		"sdk/ui/css/crunch/layout_space.css"    ,
+		"sdk/ui/css/crunch/sidebar.css"         ,
+		"sdk/ui/css/crunch/home_cards.css"      ,
+		"sdk/ui/css/crunch/datatable.css"       ,
+		"sdk/ui/css/crunch/form_datatable.css"  ,
+		"sdk/ui/css/crunch/form_toolbar.css"    ,
+		"sdk/ui/css/crunch/form_tabview.css"    ,
+		"sdk/ui/css/crunch/form_text.css"       ,
+		"sdk/ui/css/crunch/form_segmented.css"  ,
+		"sdk/ui/css/crunch/form_datepicker.css" ,
+		"sdk/ui/css/crunch/form_combo.css"      ,
+		"sdk/ui/css/crunch/form_button.css"     ,
+		"sdk/ui/css/crunch/form_textarea.css"   ,
+		"sdk/ui/css/crunch/form_checkbox.css"   ,
+		"sdk/ui/css/crunch/form_colorpicker.css",
+		"sdk/ui/css/crunch/form_counter.css"    ,
+		"sdk/ui/css/crunch/form_label.css"      ,
+		"sdk/ui/css/crunch/form_radio.css"      ,
+		"sdk/ui/css/crunch/form_richselect.css" ,
+		"sdk/ui/css/crunch/form_switch.css"     ,
+		"sdk/ui/css/crunch/form_toggle.css"     ,
+		"sdk/ui/css/crunch/form_select.css"     ,
+		"sdk/ui/css/crunch/form_slider.css"     ,
+		"sdk/ui/css/crunch/form_dblist.css"     ,
+		"sdk/ui/css/crunch/form_search.css"     ,
+		"sdk/ui/css/crunch/form_richtext.css"   ,
+		"sdk/ui/css/crunch/login.css"           ,
+		"sdk/ui/css/crunch/logout.css"          ,
+		"sdk/ui/css/crunch/button.css"          ,
+		"sdk/ui/css/crunch/timeline.css"        ,
+		"sdk/ui/css/crunch/modal.css"           , 
+		"sdk/ui/css/crunch/dashcenter.css"   
+
+	    ],
+	    "output": "sdk/ui/css/admin.css"
 	}
     }
 }
