@@ -45,9 +45,9 @@
                 {"file":"app/vendor/database_helper" , "helper" : true }, 
                 {"file":"app/vendor/database"        , "library":{ "class":"database" , "rename":"db"      } },
                 {"file":"app/vendor/Telepatia"       , "library":{ "class":"Telepatia", "rename":"session" } },
-				{"file":"app/library/crunch"         , "library":{ "class":"crunch"   } },
-				{"file":"app/library/schema"         , "library":{ "class":"schema"   } },
-				{"file":"app/helper/abm_helper"      , "helper" : true},
+		{"file":"app/library/crunch"         , "library":{ "class":"crunch"   } },
+		{"file":"app/library/schema"         , "library":{ "class":"schema"   } },
+		{"file":"app/helper/abm_helper"      , "helper" : true},
                 {"file":"app/model/abm"              , "helper" : true },
                 {"file":"app/model/auth"             , "helper" : true },
                 {"file":"app/model/ui"               , "helper" : true }
@@ -61,6 +61,12 @@
                 "table"  : "session",
                 "timeout": 60
             }
-        } 
+        },
+	"schema":
+	{
+		"session"           : { "alias": "SE"   , "join" : true },
+		"usuarios"          : { "alias": "US"   , "join" : true },
+		"usuarios_tipo"     : { "alias": "UST"  , "join" : true }
+	}
     }
 }
